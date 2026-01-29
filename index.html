@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hire Freelancers on Fiverr — Recommended Services</title>
+  <meta name="description" content="Find trusted Fiverr freelancers for video ads, design, and marketing. Curated picks and quick links."/>
+  <style>
+    :root{
+      --bg:#0b0f19;
+      --card:#121a2a;
+      --muted:#9fb0d0;
+      --text:#e9f0ff;
+      --accent:#00ff84; /* Fiverr-ish green */
+      --accent2:#4aa3ff;
+      --border:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 700px at 10% 10%, rgba(74,163,255,.18), transparent 50%),
+                  radial-gradient(900px 600px at 90% 20%, rgba(0,255,132,.14), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:24px}
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:10px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:800; letter-spacing:.2px;
+    }
+    .badge{
+      font-size:12px; color:var(--muted);
+      border:1px solid var(--border);
+      padding:6px 10px; border-radius:999px;
+      background: rgba(255,255,255,.03);
+    }
+    .nav .links{display:flex; gap:14px; color:var(--muted); font-weight:600; font-size:14px}
+    .nav .links a{opacity:.9}
+    .nav .links a:hover{opacity:1; color:var(--text)}
+    .hero{
+      margin-top:18px;
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border-radius:18px;
+      padding:28px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      overflow:hidden;
+    }
+    .hero h1{margin:0 0 10px; font-size:38px; line-height:1.15}
+    .hero p{margin:0 0 18px; color:var(--muted); font-size:16px}
+    .ctaRow{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px; padding:12px 16px; border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      font-weight:800; font-size:14px;
+      cursor:pointer;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn:hover{transform: translateY(-1px); border-color:rgba(255,255,255,.18)}
+    .btn.primary{
+      background: linear-gradient(90deg, rgba(0,255,132,.18), rgba(74,163,255,.16));
+      border-color: rgba(0,255,132,.35);
+    }
+    .btn.primary span{color:var(--accent)}
+    .mini{
+      margin-top:14px;
+      display:flex; flex-wrap:wrap; gap:10px;
+      color:var(--muted); font-size:13px;
+    }
+    .mini div{
+      border:1px dashed rgba(255,255,255,.14);
+      padding:8px 10px; border-radius:12px;
+      background: rgba(255,255,255,.02);
+    }
+    .heroCard{
+      border:1px solid var(--border);
+      border-radius:16px;
+      background: rgba(18,26,42,.55);
+      padding:18px;
+    }
+    .heroCard h3{margin:0 0 12px; font-size:16px}
+    .heroCard ul{margin:0; padding-left:18px; color:var(--muted); font-size:14px}
+    .grid{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+    }
+    .card{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      border-radius:16px;
+      padding:16px;
+      min-height: 170px;
+    }
+    .card h4{margin:0 0 8px; font-size:16px}
+    .card p{margin:0 0 12px; color:var(--muted); font-size:14px}
+    .tags{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px}
+    .tag{
+      font-size:12px; color:var(--muted);
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.02);
+      padding:5px 9px; border-radius:999px;
+    }
+    .card .actions{display:flex; gap:10px; flex-wrap:wrap}
+    .linkBtn{
+      font-weight:800; font-size:13px;
+      padding:10px 12px; border-radius:12px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.03);
+    }
+    .linkBtn:hover{border-color: rgba(0,255,132,.35)}
+    .section{
+      margin-top:18px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.02);
+      border-radius:16px;
+      padding:18px;
+    }
+    .section h2{margin:0 0 8px; font-size:18px}
+    .section p{margin:0; color:var(--muted); font-size:14px}
+    .disclosure{
+      margin-top:18px;
+      font-size:13px;
+      color: var(--muted);
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.02);
+      padding:14px;
+      border-radius:14px;
+    }
+    .footer{
+      margin:18px 0 6px;
+      color: rgba(255,255,255,.45);
+      font-size:12px;
+      text-align:center;
+    }
+    @media (max-width: 900px){
+      .hero{grid-template-columns: 1fr}
+      .grid{grid-template-columns: 1fr}
+      .hero h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div style="width:36px;height:36px;border-radius:12px;background:rgba(0,255,132,.14);display:grid;place-items:center;border:1px solid rgba(0,255,132,.25);font-weight:900;color:var(--accent);">
+          U
+        </div>
+        <div>
+          Uttam’s Fiverr Picks<br/>
+          <span class="badge">Curated • Fast • Trusted</span>
+        </div>
+      </div>
+
+      <div class="links">
+        <a href="#picks">Top Picks</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div>
+        <h1>Hire the right freelancer on Fiverr—without wasting time.</h1>
+        <p>
+          I’m a digital marketer and video ads creator. Here are my curated Fiverr service categories
+          for business owners who need fast, reliable help.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">
+            <span>Open Fiverr</span> &nbsp;→
+          </a>
+          <a class="btn" href="#picks">See recommended services</a>
+        </div>
+
+        <div class="mini">
+          <div>✅ Beginner-friendly</div>
+          <div>✅ Budget options</div>
+          <div>✅ Quick turnaround</div>
+        </div>
+      </div>
+
+      <div class="heroCard">
+        <h3>Best for:</h3>
+        <ul>
+          <li>Short video ads (Reels / TikTok)</li>
+          <li>Logo + branding</li>
+          <li>Social media posts & design</li>
+          <li>Website & landing page help</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="picks" class="section">
+      <h2>Top Fiverr service picks</h2>
+      <p>Choose a category below. Each button can use your affiliate link.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h4>Short Video Ads (Reels / TikTok)</h4>
+        <p>Best for product demos, app promos, and scroll-stopping ads.</p>
+        <div class="tags">
+          <span class="tag">Short-form</span><span class="tag">Captions</span><span class="tag">Fast edits</span>
+        </div>
+        <div class="actions">
+          <a class="linkBtn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Browse sellers →</a>
+          <a class="linkBtn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Get a quick quote</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Logo & Brand Design</h4>
+        <p>Logo, brand kit, social templates, and professional visuals.</p>
+        <div class="tags">
+          <span class="tag">Logo</span><span class="tag">Brand kit</span><span class="tag">Templates</span>
+        </div>
+        <div class="actions">
+          <a class="linkBtn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Browse designers →</a>
+          <a class="linkBtn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Order safely</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Social Media Content</h4>
+        <p>Posts, carousels, banners, and content packs for brands.</p>
+        <div class="tags">
+          <span class="tag">Facebook</span><span class="tag">Instagram</span><span class="tag">Canva</span>
+        </div>
+        <div class="actions">
+          <a class="linkBtn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Browse services →</a>
+          <a class="linkBtn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Start in minutes</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <h2>How I promote Fiverr (Affiliate-compliant)</h2>
+      <p>
+        I share educational content and recommendations for small business owners.
+        I don’t use misleading claims, spam, or fake discounts. I always disclose affiliate links.
+      </p>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <p>
+        <b>Q:</b> Are these affiliate links? <br/>
+        <b>A:</b> Yes. If you buy through a link, I may earn a commission—at no extra cost to you.
+        <br/><br/>
+        <b>Q:</b> Do you guarantee results? <br/>
+        <b>A:</b> No. I only recommend categories and best practices. Results depend on the seller and your project.
+      </p>
+    </section>
+
+    <div class="disclosure">
+      <b>Affiliate Disclosure:</b> Some links on this page may be affiliate links.
+      If you click and make a purchase, I may earn a commission at no extra cost to you.
+      This page is for informational and recommendation purposes only.
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> Uttam • This page is not endorsed by Fiverr.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
