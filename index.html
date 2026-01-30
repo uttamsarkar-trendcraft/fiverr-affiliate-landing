@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Recommended Fiverr Freelancers for Small Businesses</title>
+  <title>Uttam’s Fiverr Picks — Trusted Freelancers for Small Businesses</title>
 
   <!-- SEO -->
-  <meta name="description" content="Curated Fiverr service categories for video ads, design, and social media. Transparent, educational recommendations for small businesses." />
-  <meta name="keywords" content="Fiverr affiliate, hire freelancers, video ads, social media design, freelance services, small business" />
+  <meta name="description" content="Curated Fiverr service categories for small business owners: short video ads, logo & brand design, and social media content. Transparent affiliate-style recommendations." />
+  <meta name="keywords" content="Fiverr, freelancers, short video ads, logo design, brand design, social media content, small business" />
   <meta name="author" content="Uttam Sarkar" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph (Social Preview) -->
-  <meta property="og:title" content="Recommended Fiverr Freelancers for Small Businesses" />
-  <meta property="og:description" content="Curated services for video ads, design, and social media. Transparent affiliate recommendations." />
+  <!-- Open Graph (optional: upload og-image.png to repo root) -->
+  <meta property="og:title" content="Uttam’s Fiverr Picks — Trusted Freelancers" />
+  <meta property="og:description" content="Curated Fiverr categories to save time and hire with confidence." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://uttamsarkar-trendcraft.github.io/fiverr-affiliate-landing/" />
   <meta property="og:image" content="https://uttamsarkar-trendcraft.github.io/fiverr-affiliate-landing/og-image.png" />
@@ -21,15 +21,18 @@
 
   <style>
     :root{
-      --bg:#f3f6fb;
+      --bg:#f6f7fb;
       --card:#ffffff;
       --text:#0f172a;
       --muted:#475569;
-      --border:#e2e8f0;
-      --shadow: 0 20px 50px rgba(2,6,23,.12);
-      --green:#16a34a;
-      --btn:#0f766e;
-      --btn2:#0b5;
+      --muted2:#64748b;
+      --border:#e5e7eb;
+      --shadow: 0 18px 40px rgba(15,23,42,.08);
+      --shadow2: 0 10px 22px rgba(15,23,42,.08);
+      --green:#1f8a5b;
+      --green2:#19a765;
+      --chip:#f1f5f9;
+      --chipBorder:#e2e8f0;
     }
     *{box-sizing:border-box}
     body{
@@ -37,281 +40,11 @@
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color:var(--text);
       background:
-        radial-gradient(900px 420px at 15% 10%, rgba(20,184,166,.18), transparent 60%),
-        radial-gradient(850px 420px at 85% 15%, rgba(59,130,246,.12), transparent 60%),
+        radial-gradient(900px 450px at 20% 10%, rgba(34,197,94,.13), transparent 55%),
+        radial-gradient(900px 450px at 85% 15%, rgba(59,130,246,.10), transparent 55%),
         var(--bg);
     }
-    .wrap{max-width:1100px; margin:0 auto; padding:30px 18px;}
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px; margin-bottom:18px;
-    }
-    .brand{display:flex; align-items:center; gap:10px; font-weight:800;}
-    .logo{
-      width:40px; height:40px; border-radius:12px;
-      display:grid; place-items:center;
-      background:rgba(15,118,110,.12);
-      border:1px solid rgba(15,118,110,.25);
-      color:#0f766e; font-weight:900;
-    }
-    .nav{display:flex; gap:14px; font-weight:700; color:var(--muted); font-size:14px;}
-    .nav a{color:inherit; text-decoration:none}
-    .nav a:hover{color:var(--text)}
-    .btnTop{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:10px 14px; border-radius:12px;
-      background:#fff; border:1px solid var(--border);
-      font-weight:800; text-decoration:none; color:var(--text);
-      box-shadow: 0 10px 20px rgba(2,6,23,.06);
-    }
-    .btnTop:hover{transform: translateY(-1px)}
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:22px;
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:1100px; margin:0 auto; padding:26px 18px 60px;}
 
-    /* HERO (matches your first design card style) */
-    .hero{
-      display:grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap:0;
-    }
-    .heroLeft{
-      padding:40px 36px;
-    }
-    .kicker{
-      font-size:20px; color:#0f766e; letter-spacing:.2px;
-      margin:0 0 6px;
-    }
-    h1{
-      margin:0 0 14px;
-      font-size:42px;
-      line-height:1.08;
-    }
-    .sub{
-      margin:0 0 22px;
-      font-size:18px;
-      color:var(--muted);
-      max-width:520px;
-    }
-    .ctaRow{display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-bottom:18px;}
-    .cta{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:14px 18px; border-radius:14px;
-      background: linear-gradient(90deg, rgba(15,118,110,1), rgba(34,197,94,1));
-      color:#fff; font-weight:900; text-decoration:none;
-      border:0;
-      box-shadow: 0 14px 28px rgba(15,118,110,.22);
-    }
-    .cta.secondary{
-      background:#fff; color:var(--text);
-      border:1px solid var(--border);
-      box-shadow:none;
-      font-weight:900;
-    }
-    .cta:hover{transform: translateY(-1px)}
-    .checks{display:grid; gap:10px; margin-top:10px;}
-    .checkItem{
-      display:flex; align-items:center; gap:10px;
-      color:var(--muted); font-weight:700;
-    }
-    .tick{
-      width:22px; height:22px; border-radius:999px;
-      display:grid; place-items:center;
-      background: rgba(34,197,94,.14);
-      border:1px solid rgba(34,197,94,.35);
-      color: var(--green);
-      font-size:14px;
-      flex:0 0 auto;
-    }
-
-    .heroRight{
-      padding:28px 26px;
-      background:
-        radial-gradient(520px 380px at 70% 30%, rgba(20,184,166,.18), transparent 60%),
-        radial-gradient(520px 380px at 30% 70%, rgba(59,130,246,.10), transparent 60%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-    .illusWrap{
-      width:100%;
-      max-width:520px;
-      border-radius:18px;
-      border:1px solid rgba(2,6,23,.08);
-      background: rgba(255,255,255,.65);
-      box-shadow: 0 18px 45px rgba(2,6,23,.10);
-      padding:18px;
-    }
-    .illusWrap img{
-      width:100%;
-      height:auto;
-      display:block;
-      border-radius:14px;
-    }
-
-    /* SECTION */
-    .section{
-      padding:22px 26px;
-      border-top:1px solid var(--border);
-    }
-    .section h2{margin:0 0 10px; font-size:20px;}
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:14px;
-      margin-top:12px;
-    }
-    .tile{
-      border:1px solid var(--border);
-      border-radius:16px;
-      padding:16px;
-      background:#fff;
-    }
-    .tile h3{margin:0 0 6px; font-size:16px;}
-    .tile p{margin:0 0 10px; color:var(--muted); font-size:14px;}
-    .pillRow{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px;}
-    .pill{
-      font-size:12px; font-weight:700; color:#0f172a;
-      border:1px solid var(--border);
-      padding:6px 10px; border-radius:999px;
-      background: rgba(2,6,23,.02);
-    }
-    .tile a{
-      display:inline-flex; align-items:center; gap:8px;
-      text-decoration:none;
-      font-weight:900;
-      color:#0f766e;
-    }
-
-    .disclosure{
-      margin-top:16px;
-      padding:14px 16px;
-      border-radius:14px;
-      border:1px solid var(--border);
-      background: rgba(2,6,23,.02);
-      color:var(--muted);
-      font-size:13px;
-    }
-    .footer{
-      padding:14px 26px 22px;
-      color: rgba(15,23,42,.55);
-      font-size:12px;
-    }
-
-    @media (max-width: 950px){
-      .hero{grid-template-columns:1fr}
-      .heroLeft{padding:28px 22px}
-      .heroRight{padding:18px}
-      h1{font-size:34px}
-      .grid{grid-template-columns:1fr}
-    }
-  </style>
-</head>
-
-<body>
-  <div class="wrap">
-
-    <div class="topbar">
-      <div class="brand">
-        <div class="logo">U</div>
-        <div>Uttam’s Fiverr Picks</div>
-      </div>
-
-      <div class="nav">
-        <a href="#services">Services</a>
-        <a href="#faq">FAQ</a>
-      </div>
-
-      <a class="btnTop" href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Visit Fiverr →</a>
-    </div>
-
-    <div class="card">
-      <div class="hero">
-        <div class="heroLeft">
-          <p class="kicker">Recommended</p>
-          <h1>Fiverr Freelancers<br/>for Small Businesses</h1>
-          <p class="sub">Curated services for video ads, design, and social media.</p>
-
-          <div class="ctaRow">
-            <a class="cta" href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Find Freelancers →</a>
-            <a class="cta secondary" href="#services">Browse Services</a>
-          </div>
-
-          <div class="checks">
-            <div class="checkItem"><span class="tick">✓</span>Beginner-Friendly</div>
-            <div class="checkItem"><span class="tick">✓</span>Proven Services</div>
-            <div class="checkItem"><span class="tick">✓</span>Honest Recommendations</div>
-          </div>
-        </div>
-
-        <div class="heroRight">
-          <div class="illusWrap">
-            <!-- Replace this with your own illustration if you want -->
-            <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=60"
-              alt="Freelancer working"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div id="services" class="section">
-        <h2>Top Picks</h2>
-
-        <div class="grid">
-          <div class="tile">
-            <h3>Short Video Ads</h3>
-            <p>Reels/TikTok ads for product, app, or service promotion.</p>
-            <div class="pillRow">
-              <span class="pill">Short-form</span>
-              <span class="pill">Captions</span>
-              <span class="pill">Fast edits</span>
-            </div>
-            <a href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Browse freelancers →</a>
-          </div>
-
-          <div class="tile">
-            <h3>Logo & Brand Design</h3>
-            <p>Logo, brand kit, and consistent visuals for your business.</p>
-            <div class="pillRow">
-              <span class="pill">Logo</span>
-              <span class="pill">Brand kit</span>
-              <span class="pill">Templates</span>
-            </div>
-            <a href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Explore creators →</a>
-          </div>
-
-          <div class="tile">
-            <h3>Social Media Content</h3>
-            <p>Posts, banners, carousels, and content packs for brands.</p>
-            <div class="pillRow">
-              <span class="pill">Instagram</span>
-              <span class="pill">Facebook</span>
-              <span class="pill">Canva</span>
-            </div>
-            <a href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener">Find experts →</a>
-          </div>
-        </div>
-
-        <div id="faq" class="disclosure">
-          <b>Affiliate Disclosure:</b> Some links on this page may be affiliate links. If you click and make a purchase,
-          I may earn a commission at no extra cost to you. This page is for informational purposes only.
-        </div>
-
-        <div class="footer">
-          Affiliate Service Picks by Uttam Sarkar — This page is not endorsed by Fiverr.
-          <br/>© <span id="year"></span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+    /* Top Nav *
