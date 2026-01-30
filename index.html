@@ -47,4 +47,538 @@
     a{color:inherit; text-decoration:none}
     .wrap{max-width:1100px; margin:0 auto; padding:26px 18px 60px;}
 
-    /* Top Nav *
+    /* Top Nav */
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px;
+      padding:14px 18px;
+      background: rgba(255,255,255,.85);
+      border:1px solid var(--border);
+      border-radius:16px;
+      box-shadow: var(--shadow2);
+      position: sticky;
+      top: 12px;
+      backdrop-filter: blur(10px);
+      z-index: 50;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:900;}
+    .logo{
+      width:38px; height:38px;
+      border-radius:12px;
+      display:grid; place-items:center;
+      background: rgba(31,138,91,.12);
+      border:1px solid rgba(31,138,91,.25);
+      color: var(--green);
+      font-weight:900;
+    }
+    .navLinks{
+      display:flex; align-items:center; gap:20px;
+      font-weight:800;
+      color: var(--muted2);
+      font-size:14px;
+    }
+    .navLinks a:hover{color: var(--text)}
+    .navRight{display:flex; align-items:center; gap:10px;}
+    .btnNav{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 14px;
+      border-radius:12px;
+      background:#fff;
+      border:1px solid var(--border);
+      font-weight:900;
+      box-shadow: 0 10px 18px rgba(15,23,42,.06);
+      transition: transform .08s ease;
+    }
+    .btnNav:hover{transform: translateY(-1px)}
+    .dots{
+      width:36px; height:36px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:#fff;
+      display:grid; place-items:center;
+      color: var(--muted2);
+      font-weight:900;
+    }
+
+    /* Hero */
+    .hero{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap:22px;
+      align-items:center;
+      padding:34px 24px;
+    }
+    .heroCard{
+      background: rgba(255,255,255,.85);
+      border: 1px solid var(--border);
+      border-radius:22px;
+      box-shadow: var(--shadow);
+    }
+    .heroLeft{
+      padding:30px 28px;
+    }
+    h1{
+      margin:0 0 10px;
+      font-size:46px;
+      line-height:1.05;
+      letter-spacing:-.6px;
+    }
+    .heroLeft p{
+      margin:0 0 16px;
+      color: var(--muted);
+      font-size:16px;
+      line-height:1.6;
+      max-width:560px;
+    }
+    .ctaRow{
+      display:flex; flex-wrap:wrap;
+      gap:12px;
+      align-items:center;
+      margin:16px 0 16px;
+    }
+    .btnPrimary{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 16px;
+      border-radius:12px;
+      background: linear-gradient(90deg, var(--green), var(--green2));
+      color:#fff;
+      font-weight:900;
+      border:0;
+      box-shadow: 0 14px 28px rgba(31,138,91,.18);
+      transition: transform .08s ease;
+    }
+    .btnPrimary:hover{transform: translateY(-1px)}
+    .btnSecondary{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 16px;
+      border-radius:12px;
+      background:#fff;
+      border:1px solid var(--border);
+      font-weight:900;
+      color: var(--text);
+      transition: transform .08s ease;
+    }
+    .btnSecondary:hover{transform: translateY(-1px)}
+    .checks{display:grid; gap:10px; margin-top:8px;}
+    .check{
+      display:flex; align-items:center; gap:10px;
+      color: var(--muted);
+      font-weight:800;
+    }
+    .tick{
+      width:22px; height:22px;
+      border-radius:999px;
+      background: rgba(25,167,101,.12);
+      border:1px solid rgba(25,167,101,.28);
+      color: var(--green2);
+      display:grid; place-items:center;
+      font-size:14px;
+      flex:0 0 auto;
+    }
+    .heroRight{
+      padding:22px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .illus{
+      width:100%;
+      max-width:520px;
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid rgba(15,23,42,.08);
+      background:#fff;
+      box-shadow: var(--shadow);
+    }
+    .illus img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
+    /* Section title */
+    .sectionTitle{
+      text-align:center;
+      margin:28px 0 16px;
+    }
+    .sectionTitle h2{
+      margin:0 0 6px;
+      font-size:30px;
+      letter-spacing:-.3px;
+    }
+    .sectionTitle p{
+      margin:0;
+      color: var(--muted2);
+      font-weight:700;
+    }
+
+    /* Cards grid */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:16px;
+      margin-top:18px;
+    }
+    .tile{
+      background: rgba(255,255,255,.9);
+      border: 1px solid var(--border);
+      border-radius:18px;
+      box-shadow: var(--shadow2);
+      padding:18px;
+    }
+    .tileHead{
+      display:flex; align-items:center; gap:10px;
+      margin-bottom:8px;
+    }
+    .icon{
+      width:38px; height:38px;
+      border-radius:12px;
+      display:grid; place-items:center;
+      background: rgba(99,102,241,.10);
+      border:1px solid rgba(99,102,241,.18);
+      font-weight:900;
+    }
+    .tile h3{margin:0; font-size:18px;}
+    .tile p{
+      margin:6px 0 12px;
+      color: var(--muted);
+      font-weight:700;
+      line-height:1.5;
+      font-size:14px;
+    }
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;}
+    .chip{
+      padding:7px 10px;
+      border-radius:999px;
+      background: var(--chip);
+      border:1px solid var(--chipBorder);
+      font-size:12px;
+      font-weight:800;
+      color: #334155;
+    }
+    .tileActions{
+      display:flex; align-items:center; gap:10px; justify-content:space-between;
+    }
+    .btnGhost{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:#fff;
+      font-weight:900;
+      color:#0f172a;
+      transition: transform .08s ease;
+    }
+    .btnGhost:hover{transform: translateY(-1px)}
+    .miniArrow{
+      width:34px; height:34px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:#fff;
+      display:grid; place-items:center;
+      font-weight:900;
+      color: var(--muted2);
+    }
+
+    /* Why section */
+    .why{
+      margin-top:22px;
+      background: rgba(255,255,255,.9);
+      border:1px solid var(--border);
+      border-radius:22px;
+      box-shadow: var(--shadow);
+      padding:22px;
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap:18px;
+      align-items:center;
+    }
+    .why h2{margin:0 0 8px; font-size:26px;}
+    .why p{margin:0 0 14px; color: var(--muted); font-weight:700; line-height:1.6;}
+    .whyList{display:grid; gap:10px;}
+    .whyItem{display:flex; align-items:center; gap:10px; color: var(--muted); font-weight:800;}
+    .why img{
+      width:100%;
+      max-width:520px;
+      height:auto;
+      display:block;
+      border-radius:16px;
+      border:1px solid rgba(15,23,42,.08);
+      background:#fff;
+      box-shadow: var(--shadow2);
+    }
+
+    /* FAQ */
+    .faqWrap{
+      margin-top:18px;
+      background: rgba(255,255,255,.9);
+      border:1px solid var(--border);
+      border-radius:22px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .faqHead{
+      padding:18px 20px;
+      display:flex; align-items:center; gap:10px;
+      border-bottom:1px solid var(--border);
+      font-weight:900;
+      font-size:18px;
+    }
+    details{
+      border-bottom:1px solid var(--border);
+      padding:14px 20px;
+      background:#fff;
+    }
+    details:last-child{border-bottom:0}
+    summary{
+      cursor:pointer;
+      font-weight:900;
+      color: var(--text);
+      list-style:none;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px;
+    }
+    summary::-webkit-details-marker{display:none}
+    .faqAns{
+      margin-top:10px;
+      color: var(--muted);
+      font-weight:700;
+      line-height:1.6;
+    }
+    .plus{
+      width:30px; height:30px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      display:grid; place-items:center;
+      color: var(--muted2);
+      font-weight:900;
+      background: rgba(2,6,23,.02);
+      flex:0 0 auto;
+    }
+
+    .disclosure{
+      margin-top:14px;
+      padding:14px 16px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background: rgba(2,6,23,.02);
+      color: var(--muted);
+      font-size:13px;
+      font-weight:700;
+    }
+    .footer{
+      margin-top:10px;
+      color: rgba(15,23,42,.55);
+      font-size:12px;
+      text-align:center;
+      padding-bottom:10px;
+      font-weight:700;
+    }
+
+    @media (max-width: 980px){
+      .topbar{position: static}
+      .navLinks{display:none}
+      .hero{grid-template-columns:1fr}
+      .why{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      h1{font-size:36px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Top Nav -->
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">U</div>
+        <div>Uttam’s Fiverr Picks</div>
+      </div>
+
+      <div class="navLinks">
+        <a href="#top-picks">Top Picks</a>
+        <a href="#why">Why Fiverr</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="navRight">
+        <a class="btnNav" href="https://www.fiverr.com" target="_blank" rel="noopener">Visit Fiverr →</a>
+        <div class="dots">…</div>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero heroCard">
+      <div class="heroLeft">
+        <h1>Trusted Fiverr Freelancers<br/>for Small Business Owners</h1>
+        <p>
+          I'm a digital marketer and video ads creator.<br/>
+          Here are my curated picks of Fiverr service categories to help you save time and get quality work.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btnPrimary" href="https://www.fiverr.com" target="_blank" rel="noopener">Find Freelancers →</a>
+          <a class="btnSecondary" href="#top-picks">See recommendations</a>
+        </div>
+
+        <div class="checks">
+          <div class="check"><span class="tick">✓</span> Beginner Friendly</div>
+          <div class="check"><span class="tick">✓</span> Quick Turnaround</div>
+          <div class="check"><span class="tick">✓</span> Top Talent</div>
+        </div>
+      </div>
+
+      <div class="heroRight">
+        <div class="illus">
+          <!-- You can replace with your own hosted image later -->
+          <img
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=60"
+            alt="Freelancer working illustration style"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Picks -->
+    <div id="top-picks" class="sectionTitle">
+      <h2>Top Fiverr Service Picks</h2>
+      <p>Explore my recommended categories below. Each box includes easy links!</p>
+    </div>
+
+    <div class="grid">
+      <div class="tile">
+        <div class="tileHead">
+          <div class="icon" style="background: rgba(249,115,22,.12); border-color: rgba(249,115,22,.20);">▶</div>
+          <h3>Short Video Ads</h3>
+        </div>
+        <p>Effective Reels & TikTok clips for product, app, and service promotion.</p>
+        <div class="chips">
+          <span class="chip">Short-form</span>
+          <span class="chip">Captions</span>
+        </div>
+        <div class="tileActions">
+          <a class="btnGhost" href="https://www.fiverr.com/search/gigs?query=Short%20Video%20Ads&source=top-bar&ref_ctx_id=81e35abf05894c27b045fb71fd8aff0b&search_in=everywhere&search-autocomplete-original-term=short%20video%20ads" target="_blank" rel="noopener">
+            Browse sellers →
+          </a>
+          <div class="miniArrow">›</div>
+        </div>
+      </div>
+
+      <div class="tile">
+        <div class="tileHead">
+          <div class="icon" style="background: rgba(250,204,21,.14); border-color: rgba(250,204,21,.22);">✎</div>
+          <h3>Logo & Brand Design</h3>
+        </div>
+        <p>Expert logo, brand kits, and social media package creators.</p>
+        <div class="chips">
+          <span class="chip">Logo</span>
+          <span class="chip">Brand kit</span>
+          <span class="chip">Social graphics</span>
+        </div>
+        <div class="tileActions">
+          <a class="btnGhost" href="https://www.fiverr.com/search/gigs?query=Logo%20%26%20Brand%20Design&source=top-bar&ref_ctx_id=94bb631e245946d3a79af2e50f3213a0&search_in=everywhere&search-autocomplete-original-term=logo%20%20brand%20design" target="_blank" rel="noopener">
+            See top designers →
+          </a>
+          <div class="miniArrow">›</div>
+        </div>
+      </div>
+
+      <div class="tile">
+        <div class="tileHead">
+          <div class="icon" style="background: rgba(59,130,246,.12); border-color: rgba(59,130,246,.20);">👤</div>
+          <h3>Social Media Content</h3>
+        </div>
+        <p>Eye-catching posts, carousels, and content packs for brands.</p>
+        <div class="chips">
+          <span class="chip">Instagram</span>
+          <span class="chip">Facebook</span>
+          <span class="chip">Canva</span>
+        </div>
+        <div class="tileActions">
+          <a class="btnGhost" href="https://www.fiverr.com/search/gigs?query=Social%20Media%20Content&source=top-bar&ref_ctx_id=140eb84fac484905bf350252ed44317a&search_in=everywhere&search-autocomplete-original-term=social%20media%20content" target="_blank" rel="noopener">
+            Browse gigs →
+          </a>
+          <div class="miniArrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why -->
+    <div id="why" class="why">
+      <div>
+        <h2>Why I Recommend Fiverr</h2>
+        <p>
+          To save you time, I personally select and review freelance services to ensure they meet high standards
+          of quality and value for small businesses.
+        </p>
+
+        <div class="whyList">
+          <div class="whyItem"><span class="tick">✓</span> Curated Services</div>
+          <div class="whyItem"><span class="tick">✓</span> Proven Professionals</div>
+          <div class="whyItem"><span class="tick">✓</span> Transparent Affiliate Links</div>
+          <div class="whyItem"><span class="tick">✓</span> No Hype, Just Help</div>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:center;">
+        <img
+          src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=60"
+          alt="Collaboration illustration style"
+        />
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div id="faq" class="faqWrap">
+      <div class="faqHead">FAQ</div>
+
+      <details open>
+        <summary>
+          Are these affiliate links?
+          <span class="plus">+</span>
+        </summary>
+        <div class="faqAns">
+          Yes. Some links on this page may be affiliate links. If you make a purchase through these links,
+          I may earn a commission at no additional cost to you.
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          Do you guarantee results?
+          <span class="plus">+</span>
+        </summary>
+        <div class="faqAns">
+          No. I only recommend service categories and best practices. Results depend on the seller and your project.
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          Is this page endorsed by Fiverr?
+          <span class="plus">+</span>
+        </summary>
+        <div class="faqAns">
+          No. This page is independent and is not endorsed by Fiverr.
+        </div>
+      </details>
+    </div>
+
+    <div class="disclosure">
+      <b>Affiliate Disclosure:</b> Some links on this page may be affiliate links. If you click and make a purchase,
+      I may earn a commission at no extra cost to you. This page is for informational and recommendation purposes only.
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> Uttam • This page is not endorsed by Fiverr.
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
