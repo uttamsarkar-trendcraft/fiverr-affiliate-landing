@@ -384,6 +384,36 @@
       .grid{grid-template-columns:1fr}
       h1{font-size:36px}
     }
+
+    /* ✅ Floating Social Icons (Added) */
+    .social-floating{
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      display: flex;
+      gap: 12px;
+      z-index: 9999;
+    }
+    .social-floating a{
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      color: #111827;
+      transition: all 0.2s ease;
+    }
+    .social-floating a:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    .social-floating svg{
+      width: 22px;
+      height: 22px;
+    }
   </style>
 </head>
 
@@ -432,7 +462,6 @@
 
       <div class="heroRight">
         <div class="illus">
-          <!-- You can replace with your own hosted image later -->
           <img
             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=60"
             alt="Freelancer working illustration style"
@@ -575,6 +604,27 @@
       © <span id="year"></span> Uttam • This page is not endorsed by Fiverr.
     </div>
 
+  </div>
+
+  <!-- ✅ Floating Social Icons (Added) -->
+  <div class="social-floating">
+    <a href="https://www.instagram.com/trendcraft_editor/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm0 9A3.5 3.5 0 1 1 15.5 13 3.5 3.5 0 0 1 12 16.5zM17.8 6.2a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2z"/>
+      </svg>
+    </a>
+
+    <a href="https://www.pinterest.com/trendcraftUS/" target="_blank" rel="noopener" aria-label="Pinterest">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2a10 10 0 0 0-3.5 19.4c-.1-.8-.2-2 .1-2.9l1.2-5.1s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.9 0 1.3.7 1.3 1.5 0 .9-.6 2.2-.9 3.5-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-1.9 3.1-4.6 0-2.4-1.7-4-4.2-4-2.9 0-4.5 2.2-4.5 4.4 0 .9.3 1.9.8 2.4.1.1.2.3.1.4l-.3 1.2c-.1.2-.2.3-.5.2-1.8-.8-2.9-3.2-2.9-5.2 0-4.2 3.1-8 8.9-8 4.7 0 8.3 3.4 8.3 7.9 0 4.7-3 8.5-7.1 8.5-1.4 0-2.7-.7-3.1-1.6l-.9 3.4c-.3 1.1-1 2.4-1.5 3.2.9.3 1.8.5 2.8.5a10 10 0 1 0 0-20z"/>
+      </svg>
+    </a>
+
+    <a href="https://x.com/trendcraft03" target="_blank" rel="noopener" aria-label="X">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.9 2H22l-7.5 8.6L23 22h-6.8l-5.3-7-6 7H1.8l8-9.2L1 2h6.9l4.8 6.3L18.9 2z"/>
+      </svg>
+    </a>
   </div>
 
   <script>
